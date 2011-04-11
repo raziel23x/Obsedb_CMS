@@ -1,0 +1,17 @@
+Installation Instructions
+
+    * Upload the 'Obsedb' folder contents to your development site
+    * Load the Obsedb.sql file into phpMyAdmin
+    * Edit config.php to reflect your site settings
+
+CHMOD Directories 777
+
+/media
+/media/boxart
+/media/companies
+/media/screenshots
+
+Default Admin Login
+
+Username: admin
+Password: admin

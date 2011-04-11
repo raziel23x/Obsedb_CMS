@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Nouveau Membre</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+
+
+<script language="javascript">
+<!--
+function subButton_onclick(){
+if(valid.pwzpseudo.value=="") {
+	alert("Login obligatoire!")
+	valid.pwzpseudo.focus(); return false }
+if(valid.pwzpass.value=="") {
+	alert("Mot de passe obligatoire!")
+	valid.pwzpass.focus(); return false }
+if(valid.pwzpass.value!=valid.pwzpass2.value) {
+	alert("Les mots de passe ne correspondent pas !")
+	valid.pwzpass.focus(); return false }
+valid.subButton.value="Un instant...";
+valid.subButton.disabled=true;
+valid.submit();
+return true;
+}
+//-->
+</script>
+<form method="post" action="<%self%>" name="valid">
+  <p align="center">
+  <table border="1" align="center">
+    <tr> 
+      <td bordercolor="1" bgcolor="#999999"> <p align="center"><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Enregistrement 
+          des utilisateurs</font></strong></p></td>
+    </tr>
+    <tr> 
+      <td bordercolor="1"> <p align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><i><%pwzmsg%></i></font></p></td>
+    </tr>
+    <tr> 
+      <td bordercolor="1"> <table align="right">
+          <tr> 
+            <td> <p align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Code 
+                utilisateur :</font></b></p></td>
+            <td> <input name="pwzpseudo" type="text" value="<%pwzpseudo%>"></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr> 
+      <td bordercolor="1"> <table align="right">
+          <tr> 
+            <td> <p align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Nom 
+                et Pr&eacute;nom :</font></b></p></td>
+            <td> <input name="pwzname" type="text" value="<%pwzname%>"></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr> 
+      <td bordercolor="1"> <table align="right" width="100%">
+          <tr> 
+            <td> <p align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Mot 
+                de passe :</font></b></p></td>
+            <td> <input type="password" name="pwzpass"></td>
+          </tr>
+          <tr> 
+            <td> <p align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Retapez 
+                le<br>
+                mot de passe :</font></b></p></td>
+            <td> <input type="password" name="pwzpass2"></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr> 
+      <td bordercolor="1"> <table align="right">
+          <tr> 
+            <td> <p align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">E-mail 
+                :</font></b></p></td>
+            <td> <input name="pwzmail" type="text" value="<%pwzmail%>"></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr> 
+      <td bordercolor="1" align="center"><input type=button name=subButton value="Envoyer" LANGUAGE=javascript onclick="return subButton_onclick()">
+      </td>
+    </tr>
+  </table>
+  <div align="center"><a href="http://opensource.spidmail.net"><img src="images/securedby.jpg" width="88" height="31" border="0"></a> 
+  </div>
+</form><p></p>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+<div class="alt2">
+    <div class="alt2_top">
+    <img src="images/corners/alt2_tlc.gif" class="corner" width="10" height="10" style="display: none;">
+    </div>
+    <p></p>
+    <div class="alt2_bottom">
+    <img src="images/corners/alt2_blc.gif" class="corner" width="10" height="10" style="display: none;">
+    </div>
+</div>

@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Obsedb CMS Admin Control Panel</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+/* ===========================================
+   Default Obsedb CMS Admin Stylesheet
+   =========================================== */
+
+.bar 
+{
+    color: #000000;
+    font-size: 9pt;
+    font-weight: bold;
+    padding-left: 4px;
+    background: #ffffff;
+}
+
+.border
+{
+    background-color: #ebebeb; 
+}
+
+.date
+{
+    font-family: "Segoe UI", arial, verdana, sans-serif;
+    font-size: 8pt;
+    background-color: #1D6AA0;
+    color: #FFFFFF;
+}
+
+.formlabel
+{
+    padding: 5px;
+    font-size: 8pt;
+    background-color: #FFFFFF;
+    
+}
+
+.formlabel2 
+{
+    padding: 5px;
+    font-size: 8pt;
+    background-color: #FFFFFF;
+    
+}
+
+.header
+{
+    text-align: right;
+    background: #FFFFFF;
+    background-image: url(../images/admin/header.jpg);
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #00248c;
+    font-family: "Segoe UI", arial, verdana, sans-serif;
+    font-size: 10pt;
+    color: #000000;
+    padding: 0px;
+}
+
+
+.header_right 
+{
+    font-family: "Segoe UI", arial, verdana, sans-serif; 
+    padding: 10px; 
+    text-align: right; 
+    background-color: #FFF; 
+    background-image: url(../images/admin/header.jpg);
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #00248C; 
+    font-size: 9pt; 
+    color: #000; 
+}
+
+.header_right a:link 
+{ 
+    color: #000000; 
+}
+
+.header_right a:visited 
+{ 
+    color: #000000; 
+}
+
+.header_right a:active 
+{ 
+    color: #000000; 
+}
+
+.header_right a:hover 
+{ 
+    color: #000000; 
+}
+
+.header_title 
+{ 
+    font-weight: bold; 
+}
+
+.hmenu 
+{
+    padding: 4px;
+    font-size: 8pt;
+    background-color: #ECECEC; 
+}
+
+.main 
+{
+    background-color: #ebebeb; 
+}
+
+.submit 
+{ 
+    font-family: "Segoe UI", arial, verdana, sans-serif; 
+    font-size: 8pt; 
+}
+
+.userbar 
+{ 
+    font-family: "Segoe UI", arial, verdana, sans-serif; 
+    font-size: 8pt; 
+    background-color: #1D6AA0; 
+    color: #FFFFFF; 
+}
+
+.userbar a:link 
+{ 
+    color: #FFFFFF; 
+}
+
+.userbar a:hover 
+{ 
+    color: #FFF; 
+}
+
+.userbar a:visited 
+{ 
+    color: #FFF; 
+}
+
+.userbar a:active 
+{ 
+    color: #FFF; 
+}
+
+.vmenu 
+{ 
+    padding: 0px; 
+    font-size: small; 
+    line-height: 160%; 
+    background: #FFF; 
+}
+
+/* ====================================================
+   Global Link Style
+   ==================================================== */
+
+a:link 
+{ 
+    text-decoration: none; 
+    color: #0072bc; 
+}
+
+a:visited 
+{ 
+    text-decoration: none; 
+    color: #0072bc; 
+}
+
+a:active 
+{ 
+    text-decoration: none; 
+    color: #0072bc; 
+}
+
+a:hover 
+{ 
+    text-decoration: underline; 
+    color: #0072bc; 
+}
+
+.column_header 
+{
+    background-image: url(../images/admin/colheader.jpg);
+    font-size: 8pt;
+    font-family: Tahoma; 
+}
+
+.optionmenu 
+{ 
+    font-size: 8pt; 
+}
+
+.optionmenu a:link 
+{ 
+    color: blue; 
+    text-decoration: none; 
+}
+
+.optionmenu a:active 
+{ 
+    color: blue; 
+    text-decoration: none; 
+}
+
+.optionmenu a:visited 
+{ 
+    color: blue; 
+    text-decoration: none; 
+}
+
+.optionmenu a:hover 
+{ 
+    color: blue; 
+    text-decoration: underline; 
+}
+
+body 
+{ 
+    background-color: #ebebeb; 
+    font-family: "Segoe UI", arial, verdana, sans-serif; 
+    font-size: 11px; 
+    margin: 0px; 
+}
+
+input 
+{ 
+    font-family: "Segoe UI", arial, verdana, sans-serif; 
+    font-size: 11px;  
+}
+
+select 
+{ 
+    font-family: "Segoe UI", arial, verdana, sans-serif; 
+    font-size: 11px;
+    padding: 1px; 
+}
+
+td 
+{ 
+    font-size: 11px; 
+}
+
+td.menu 
+{
+    padding: 5px;
+}
+
+td.menu a
+{
+    color: #000000;
+    text-decoration: none;
+    font-size: 8pt;
+}
+
+hr 
+{ 
+    color: #1D6AA0; 
+    height: 1px; 
+}
+
+.modheader a 
+{ 
+    border-bottom: solid 1px #FFFFFF; 
+}
+
+.modheader a:hover 
+{ 
+    border-bottom: solid 1px #1D6AA0; 
+}
+-->
+</style>
+</head>
+<body>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	   <td class="header"><img src="../images/admin/logo.jpg"></td>
+		<td class="header_right" width="100%">
+		
+		
+		
+		
+		</td>
+
+	</tr>
+</table>
+<br /><br />
+<form method="POST" action="<%pwzin%>">
+<table border="0" cellspacing="0" cellpadding="0" align="center" width="400">
+	<tr>
+		<td class="formlabel">
+
+		<table border="0" cellspacing="0" cellpadding="6" WIDTH="100%">
+			<tr>
+				<td class="formlabel"><b>Obsedb CMS Admin Control Panel</b></td>
+			</tr>
+		</table><br />
+		
+		<table border="0" cellspacing="0" cellpadding="5">
+			<tr>
+				<td align="right" class="formlabel">Username:</td>
+				<td class="formlabel"><input type="text" name="pwzpseudo" size="40"></td>
+			</tr>
+			<tr>
+				<td align="right">Password:</td>
+				<td><input type="password" name="pwzpass" size="40"></td>
+			</tr>
+		</table>
+		<table border="0" cellspacing="0" cellpadding="5">
+			<tr>
+				<td><input type="submit" name="submit" value="Log in" style="font-weight: bold; color: #3C4D81;"></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+</form>
+
+<br />
+
+<div align="center" style="font-size: 11px;">
+Powered by Obsedb CMS - Copyright &copy; 2009
+</div>
+
+</body>
+</html>

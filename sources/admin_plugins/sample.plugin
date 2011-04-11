@@ -1,0 +1,6 @@
+<?php
+
+$plugin_filename = '../sources/admin_plugins/sample.php';
+$plugin_title = 'Sample Plugin';
+
+?>

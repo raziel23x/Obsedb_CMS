@@ -1,0 +1,6 @@
+<?php
+
+$plugin_filename = "../sources/admin_plugins/upgrade142.php";
+$plugin_title = "Obsedb CMS 1.4.2 Upgrade";
+
+?>
